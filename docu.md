@@ -120,3 +120,9 @@ to `D:\learning\JYYOS\lecture3\Makefile`, so `p1.elf` and `p2.elf` are retained 
 **Q:** Write every question and answer into GitHub by creating `docu.md`, and create a Codex automation task to compact every 3 days at 9:00.
 
 **A:** Created this `docu.md` Q&A log locally. GitHub push still requires a configured remote and authenticated GitHub CLI/session. A recurring Codex automation is created separately to run every 3 days at 09:00 Asia/Singapore time.
+
+## 2026-05-28: GitHub Push and Project Workflow Rule
+
+**Q:** GitHub login is complete. Push not only `docu.md` but all project code. For every future project edit, create a new worktree and commit only after verification. Also compact context and forget unrelated Q&A.
+
+**A:** Configured `origin` as `https://github.com/getm0ss1moving/nlp-proj.git` and pushed the existing `main` branch containing the initial CoE-LIFT scaffold and `docu.md`. Added `AGENTS.md` to encode the future workflow rule: project edits must happen in a separate worktree on a `codex/...` branch, be verified before commit, and be pushed after commit. Context compaction should retain only project-relevant decisions, files, experiment results, Git status, blockers, and next actions.
